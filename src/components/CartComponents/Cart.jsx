@@ -32,6 +32,7 @@ const Cart = () => {
 
   const success = () => {
     dispatch(decrementAmount(cart));
+    dispatch(remove());
     navigateTo('/success');
   };
 
